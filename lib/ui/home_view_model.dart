@@ -22,8 +22,8 @@ class HomeViewModel with ChangeNotifier{
   Future<void> fetch(String query) async{
     final result = await repository.fetch(query);
     //_controller.add(result);
-    _photos = result;
-    notifyListeners();
+    //_photos = result;
+    //notifyListeners();
   }
 
 }
